@@ -1,0 +1,12 @@
+<hr><hr>
+<form action="" *ngIf=" book">
+  title:
+  <input type="text" [(ngModel)]="book.title" name="title" id="">
+  price:
+  <input type="text"  [(ngModel)]="book.price" name="price" id="">
+  desc:
+  <input type="text"  [(ngModel)]="book.desc" name="desc" id="">
+  auther:
+  <input type="text"  [(ngModel)]="book.auther" name="auther" id="">
+  <button class="btn btn-primary" (click)="onUp()">save</button>
+  </form>

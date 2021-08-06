@@ -1,0 +1,30 @@
+<hr>
+<hr>
+<!-- <hr><div class="box">
+  <p class="p">tile</p>
+  <p class="p">price</p>
+  <p class="p">desc</p>
+  <p class="p">auther</p>
+</div>
+<hr> -->
+<div class="row">
+  <div ngClass="col-lg-4 col-md-6 mb-4 " *ngFor="let book of books">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="card-title">
+          <a href="#">{{book.title}} </a>
+        </div>
+        <div class="card-price">
+          <p>{{book.price}}$$</p>
+        </div>
+        
+        <div class="card-text">
+          <p>{{book.desc}}</p>
+        </div>
+        <p>{{book.auther}}</p>
+        <a class="btn btn-primary" routerLink="/update/{{book.id}}">update</a>
+        <button class="btn btn-danger" (click)="onRemove(book.id)">delete</button>
+      </div>
+    </div>
+  </div>
+</div>
